@@ -12,7 +12,7 @@ stages {
     stage("Build image"){
         steps{
             script {
-            sh docker build -t wasim123/nginx 
+            sh docker run -it wasim123 nginx:latest 
             }
         
         }
